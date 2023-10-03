@@ -1,112 +1,147 @@
 
-// show or hide on button click 01
+// show hide rotate onclick function button one
 
-const divContainer = document.querySelector ('#linksandinfo');
-let isClicked = true;
+const containerOne = document.querySelector("#linksandinfo");
+const rotateSignOne = document.getElementById("plussign");
+let isClickedOne = true;
 
-
-function showHide(){
-    if(isClicked){
-        divContainer.style.display = 'block';
-        isClicked = false;
-    }else{
-        divContainer.style.display ='none';
-        isClicked = true;
+function showHideOne() {
+  if (isClickedOne) {
+    containerOne.style.display = "block";
+    rotateSignOne.style.transform = "rotate(45deg)";
+    isClickedOne = false;
+  } else {
+    containerOne.style.display = "none";
+    rotateSignOne.style.transform = "rotate(-90deg)";
+    isClickedOne = true;
+  }
 }
+
+// show hide rotate onclick function button two
+
+const containerTwo = document.querySelector("#linksandinfotwo");
+const rotateSignTwo = document.getElementById("plussigntwo");
+let isClickedTwo = true;
+
+function showHideTwo() {
+  if (isClickedTwo) {
+    containerTwo.style.display = "block";
+    rotateSignTwo.style.transform = "rotate(45deg)";
+    isClickedTwo = false;
+  } else {
+    containerTwo.style.display = "none";
+    rotateSignTwo.style.transform = "rotate(-90deg)";
+    isClickedTwo = true;
+  }
 }
 
 
-// // rotate on click button  
+// show hide rotate onclick function button three
 
-// let divSign = document.getElementById ('#plussign');
+const containerThree = document.querySelector("#linksandinfothree");
+const rotateSignThree = document.getElementById("plussignthree");
+let isClickedThree = true;
 
-// function rotatePlus(){
-//     if(isClicking){
-//         divSign.style.transform = 'rotate(90deg)';
-//         isClicking = false;
+function showHideThree() {
+  if (isClickedThree) {
+    containerThree.style.display = "block";
+    rotateSignThree.style.transform = "rotate(45deg)";
+    isClickedThree = false;
+  } else {
+    containerThree.style.display = "none";
+    rotateSignThree.style.transform = "rotate(-90deg)";
+    isClickedThree = true;
+  }
+}
+
+// show hide rotate onclick function button four
+
+const containerFour = document.querySelector("#linksandinfofour");
+const rotateSignFour = document.getElementById("plussignfour");
+let isClickedFour = true;
+
+function showHideFour() {
+  if (isClickedFour) {
+    containerFour.style.display = "block";
+    rotateSignFour.style.transform = "rotate(45deg)";
+    isClickedFour = false;
+  } else {
+    containerFour.style.display = "none";
+    rotateSignFour.style.transform = "rotate(-90deg)";
+    isClickedFour = true;
+  }
+}
+
+
+// show hide rotate onclick function button five
+
+const containerFive = document.querySelector("#linksandinfofive");
+const rotateSignFive = document.getElementById("plussignfive");
+let isClickedFive = true;
+
+function showHideFive() {
+  if (isClickedFive) {
+    containerFive.style.display = "block";
+    rotateSignFive.style.transform = "rotate(45deg)";
+    isClickedFive = false;
+  } else {
+    containerFive.style.display = "none";
+    rotateSignFive.style.transform = "rotate(-90deg)";
+    isClickedFive = true;
+  }
+}
+
+// show hide rotate onclick function button six
+
+const containerSix = document.querySelector("#linksandinfosix");
+const rotateSignSix = document.getElementById("plussignsix");
+let isClickedSix = true;
+
+function showHideSix() {
+  if (isClickedSix) {
+    containerSix.style.display = "block";
+    rotateSignSix.style.transform = "rotate(45deg)";
+    isClickedSix = false;
+  } else {
+    containerSix.style.display = "none";
+    rotateSignSix.style.transform = "rotate(-90deg)";
+    isClickedSix = true;
+  }
+}
+
+
+//for reference
+
+//OLD FUNCTION 
+
+// const clickPlustwo = document.querySelector ('#linksandinfothree');
+
+// let isClickedthree = true;
+
+// function showHidethree(){
+//     if(isClickedthree){
+//         clickPlustwo.style.display='block';
+//         isClickedthree = false;
 //     }else{
-//         divSign.style.transform = 'rotate(-90deg)';
-//         isClicking = true;
+//         clickPlustwo.style.display='none';
+//         isClickedthree = true;
 //     }
 // }
 
-// show or hide button 02
+//NEW FUNCTION 
 
-const clickPlus = document.querySelector ('#linksandinfotwo');
+// const containerOne = document.querySelector("#linksandinfo");
+// const rotateSignOne = document.getElementById("plussign");
+// let isClickedOne = true;
 
-let isClickedtwo =  true;
-
-function showHidetwo(){
-    if(isClickedtwo){
-        clickPlus.style.display ='block';
-        isClickedtwo = false;
-    }else{
-        clickPlus.style.display ='none';
-        isClickedtwo = true;
-    }
-}
-// show or hide button 03
-
-const clickPlustwo = document.querySelector ('#linksandinfothree');
-
-let isClickedthree = true;
-
-function showHidethree(){
-    if(isClickedthree){
-        clickPlustwo.style.display='block';
-        isClickedthree = false;
-    }else{
-        clickPlustwo.style.display='none';
-        isClickedthree = true;
-    }
-}
-
-// show or hide button 04 
-
-const clickPlusthree = document.querySelector('#linksandinfofour');
-let isClickedfour = true;
-
-function showHidefour(){
-    if(isClickedfour){
-        clickPlusthree.style.display ='block';
-        isClickedfour = false;
-    }else{
-        clickPlusthree.style.display ='none';
-        isClickedfour = true;
-    }
-}
-
-// show or hide button 05
-
-const clickPlusFive = document.querySelector('#linksandinfofive');
-
-let isClickedFive = true;
-
-function showHidefive(){
-    if(isClickedFive){
-        clickPlusFive.style.display='block';
-        isClickedFive = false;
-    } else{
-        clickPlusFive.style.display='none';
-        isClickedFive = true;
-    }
-}
-
-// show or hide button 06
-
-
-const clickPlusSix = document.querySelector('#linksandinfosix');
-
-let isClickedSix = true;
-
-function showHidesix(){
-    if(isClickedSix){
-        clickPlusSix.style.display='block';
-        isClickedSix = false;
-    } else{
-        clickPlusSix.style.display='none';
-        isClickedSix = true;
-    }
-}
-
-
+// function showHide() {
+//   if (isClickedOne) {
+//     containerOne.style.display = "block";
+//     rotateSignOne.style.transform = "rotate(45deg)";
+//     isClickedOne = false;
+//   } else {
+//     containerOne.style.display = "none";
+//     rotateSignOne.style.transform = "rotate(-90deg)";
+//     isClickedOne = true;
+//   }
+// }
