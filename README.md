@@ -23,7 +23,7 @@ Conclusion:
 My Software and Frontend Developer Portfolio Website is a showcase of my expertise in web development. Its use of HTML, CSS, and JavaScript, along with creative button animations and minimalist design, highlights my technical proficiency and commitment to creating user-friendly and aesthetically pleasing web experiences. Explore my portfolio and get to know me as a developer through this sleek and engaging website.
 
 
-Explore the live website[here](https://carlislebrianna.com/).
+Explore the live website[ here](https://carlislebrianna.com/).
 ![](images/BC-1.jpg)
 ![](images/BC-2.jpg)
 ![](images/BC-3.jpg)
