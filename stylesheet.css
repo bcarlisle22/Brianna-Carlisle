@@ -1,0 +1,597 @@
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+body{
+    animation: fade-in 4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+li{
+    list-style: none;
+}
+
+/* gets rid of linear gradient poster for linksandinfo videos */
+
+video::-webkit-media-controls-panel {
+    background-image: none !important;
+    filter: brightness(0.6);
+}
+
+/* page fade in animation */
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* blink animation */
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
+/* navigation */
+
+.navigation{
+    padding-left: 80%;
+    display: flex;
+    font-family: 'Roboto';
+    padding-top: 50px;
+}
+.navigation-links{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+}
+.navigation-links a{
+    background-color: transparent;
+}
+.navigation a{
+    color: #ffff;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: ease-in-out 0.25s;
+}
+
+.navigation-links a:hover{
+    color: #888;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    transition: ease 0.5s;
+}
+
+/* home section */
+.home-page{
+    padding-bottom: 15%;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+.home-title{
+    color: #888;
+    margin-bottom: 20%;
+}
+.home-title h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#cursor{
+    animation: blink 1s infinite;
+}
+.name{
+    display: flex;
+}
+.name h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    padding-top: 20%;
+}
+
+
+/* about section */
+
+.about-top h1{
+    font-size: 60px;
+    font-weight: 300;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+.about-blurb{
+    display: flex;
+}
+.about-blurb-container{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+}
+.about-blurb-container{
+    width: 45%;
+}
+
+.about-blurb-more a{
+    text-decoration: none;
+    color: #fff;
+}
+#arrow-right{
+    transform: translateY(5px);
+    transition: ease-in-out 0.5s;
+}
+.about-blurb-more a:hover #arrow-right{
+    padding-left: 5%;
+    transition: ease-in-out 0.5s;
+}
+
+
+/* projects sectiom */
+.projects-page{
+    padding-top:25%;
+    padding-bottom: 10em;
+}
+
+.projects-title h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+.project-items h2{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: grey;
+}
+.project-items h2 a{
+    color: b;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#project-line{
+    width: 55%;
+    margin-left: 15%;
+    align-items: center;
+}
+.project-items h1{
+    float: left;
+    margin-left: 20%;
+    margin-right: 15%;
+   
+}
+.project-items p{
+    text-transform: uppercase;
+}
+#live-site{
+    color: #fff;
+}
+#live-site:hover{
+    color: #888;
+}
+#project-video{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* plus sign icons */
+
+#plussign, #plussigntwo, #plussignthree, 
+#plussignfour, #plussignfive, #plussignsix {
+    /* new positioning for icon*/
+    margin-left: 25%;
+    position: relative;
+    top: -30px;
+    transition: ease-in-out 0.5s;
+}
+
+
+#home-source{
+    text-transform: uppercase;
+    color: #888;
+}
+#home-source:hover{
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+#linksandinfo{
+    margin-left: 33%;
+    font-size: 15px;
+    display: none;
+    transition: ease-in-out 0.5s;
+    animation: fade-in 0.6s;
+}
+#linksandinfotwo{
+    margin-left: 33%;
+    font-size: 15px;
+    display: none;
+    animation: fade-in 0.6s;
+}
+#linksandinfothree{
+    margin-left: 30%;
+    font-size: 15px;
+    display: none;
+    animation: fade-in 0.6s;
+}
+#linksandinfofour{
+    margin-left: 30%;
+    font-size: 15px;
+    display: none;
+    animation: fade-in 0.6s;
+}
+#linksandinfofive{
+    margin-left: 30%;
+    font-size: 15px;
+    display: none;
+    animation: fade-in 0.6s;
+}
+
+#linksandinfosix{
+    margin-left: 30%;
+    font-size: 15px;
+    display: none;
+    animation: fade-in 0.6s;
+}
+
+/* CONTACT SECTION */
+.contact-page{
+    padding-top: 25%;
+}
+.contact-name-title h1{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-left: 5%;
+    background-color: black;
+    color: white;
+    width: 10%;
+}
+.contact-title h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-left: 5%;
+    font-weight: 300;
+}
+.contact-bottom{
+    line-height: 60px;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.email-link h1{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 5%;
+    margin-left: 22%;
+}
+
+#arrow-up{
+    margin-left: 85%;
+    margin-top: 2%;
+}
+#arrowlink{
+    color: black;
+}
+/* form */
+
+form{
+    width: 50%;
+    border-radius: 4px;
+    padding: 55px 30px;
+    align-items: center;
+    margin-left: 20%;
+  }
+  
+  form .half{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  form .half .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 48%;
+    border-bottom: 2px solid #fff;
+  }
+  
+  form label{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  
+  form .half .item input{
+    border: 1px solid #000;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    font-size: 17px;
+  }
+/* input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+} */
+
+  form .full{
+    margin-bottom: 24px;
+  }
+  
+  form .full textarea{
+    background: transparent;
+    border: 1px solid #000;
+    padding: 12px 16px;
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+    border: 2px solid #fff;
+  }
+  
+ 
+  
+  form .action input{
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+  }
+  
+  form .action input[type="submit"]{
+    background: transparent;
+    color: black;
+    transition: ease-in-out 0.35s;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  form .action input[type="submit"]:hover{
+      background-color: #fff;
+      color: #000;
+      transition: ease-in-out 0.35s;
+  }
+
+ /* media queries */
+
+/* < = 576PX
+> = 576PX
+> = 768PX
+> = 992PX
+> = 1200PX
+> = 1400PX */
+
+ @media (max-width: 768px){
+
+    .navigation{
+        padding-left: 45%;
+    }
+    
+    .navigation-links a{
+        font-size: 10px;
+    }
+    .home-page{
+        padding-top: 20em;
+        padding-bottom: 25em;
+    }
+    .name h1{
+        font-size: 20px;
+    }
+    .about-page{
+        padding-bottom: 10em;
+    }
+    .about-top h1, 
+    .projects-title h1, 
+    .contact-title h1{
+        font-size: 25px;;
+    }
+    
+    .about-blurb-container{
+        width: 75%;
+        font-size: 12px;
+    }
+    
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+      
+    form label{
+        display: block;
+        font-size: 13px;
+        letter-spacing: 3.5px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    
+    form .full textarea{
+        height: 150px;
+        font-size: 15px;
+    }
+      
+    .email-link h1{
+        font-size: 13px;
+        margin-left: 15%;
+    }
+    .contact-title h1{
+        line-height: 18px;
+    }
+    
+    .projects-page{
+        padding-top:25%;
+    }
+    
+    .project-items h2 a{
+        color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    #project-line{
+        width: 80%;
+        align-items: center;
+    }
+    .project-items h1{
+        float: left;
+        margin-left: 20%;
+        margin-right: 15%;
+        font-size: 20px;
+    }
+    .project-items p{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    #project-video{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #plussign, #plussigntwo, #plussignthree, 
+    #plussignfour, #plussignfive, #plussignsix {
+        /* new positioning for icon*/
+        margin-left: 85%;
+        position: relative;
+        top: -30px;
+        transition: ease-in-out 0.5s;
+        background-color: transparent;
+    }
+}
+    
+
+@media (max-width: 476px){
+
+.navigation{
+    padding-left: 45%;
+}
+
+.navigation-links a{
+    font-size: 10px;
+}
+.home-page{
+    padding-top: 20em;
+    padding-bottom: 25em;
+}
+.name h1{
+    font-size: 20px;
+}
+.about-page{
+    padding-bottom: 10em;
+}
+.about-top h1, 
+.projects-title h1, 
+.contact-title h1{
+    font-size: 25px;;
+}
+
+.about-blurb-container{
+    width: 75%;
+    font-size: 12px;
+}
+
+form{
+    width: 90%;
+    margin-left: 5%;
+}
+  
+form label{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+form .full textarea{
+    height: 150px;
+    font-size: 15px;
+}
+  
+.email-link h1{
+    font-size: 13px;
+    margin-left: 15%;
+}
+.contact-title h1{
+    line-height: 18px;
+}
+
+.projects-page{
+    padding-top:25%;
+}
+
+.project-items h2 a{
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#project-line{
+    width: 80%;
+    align-items: center;
+}
+.project-items h1{
+    float: left;
+    margin-left: 20%;
+    margin-right: 15%;
+    font-size: 16px;
+}
+.project-items p{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#project-video{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#plussign, #plussigntwo, #plussignthree, 
+#plussignfour, #plussignfive, #plussignsix {
+    /* new positioning for icon*/
+    margin-left: 85%;
+    position: relative;
+    top: -30px;
+    transition: ease-in-out 0.5s;
+    background-color: transparent;
+}
+
+
+}
+/* write your media queries from large to small 
+that's why they were working last time */
+
