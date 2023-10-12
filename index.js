@@ -110,7 +110,6 @@ function showHideSix() {
 }
 
 
-//for reference
 
 //OLD FUNCTION 
 

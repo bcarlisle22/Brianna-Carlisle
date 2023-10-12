@@ -12,6 +12,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    /* background-color: #000; */
 }
 ::-webkit-scrollbar{
     display: none;
@@ -20,7 +21,7 @@ li{
     list-style: none;
 }
 
-/* gets rid of linear gradient poster for linksandinfo videos */
+/* gets rid of linear gradient poster for all linksandinfo videos */
 
 video::-webkit-media-controls-panel {
     background-image: none !important;
@@ -133,24 +134,35 @@ video::-webkit-media-controls-panel {
 .about-blurb-container{
     width: 45%;
 }
+#skill{
+    color: #888;
+}
+.about-blurb-container-more{
+    width: 100%;
+    margin-top: 5%;
+}
 
 .about-blurb-more a{
     text-decoration: none;
     color: #fff;
+    /* animation: blink 3s infinite; */
 }
-#arrow-right{
-    transform: translateY(5px);
-    transition: ease-in-out 0.5s;
+.view-projects a{
+    color: #888;
+    text-decoration: none;
+    transition: ease 0.75s;
+    text-decoration: underline;
+    text-underline-offset: 15px;
 }
-.about-blurb-more a:hover #arrow-right{
-    padding-left: 5%;
-    transition: ease-in-out 0.5s;
+.view-projects a:hover{
+    transition: ease 0.75s;
+    color: #fff;
 }
 
 
 /* projects sectiom */
 .projects-page{
-    padding-top:25%;
+    padding-top:20%;
     padding-bottom: 10em;
 }
 
@@ -260,6 +272,27 @@ video::-webkit-media-controls-panel {
     animation: fade-in 0.6s;
 }
 
+.more-projects-container h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-left: 12%;
+    font-weight: 200;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+.more-projects-container-sections{
+    display: flex;
+    flex-wrap: wrap;
+}
+.more-projects-content{
+    margin-left: 12%;
+}
+.more-projects-content h1{
+    font-size: 15px;
+    font-weight: 200;
+}
+
 /* CONTACT SECTION */
 .contact-page{
     padding-top: 25%;
@@ -302,7 +335,7 @@ video::-webkit-media-controls-panel {
 #arrowlink{
     color: black;
 }
-/* form */
+ /* FORM */
 
 form{
     width: 50%;
@@ -387,6 +420,7 @@ top: -5px;
       transition: ease-in-out 0.35s;
   }
 
+
  /* media queries */
 
 /* < = 576PX
@@ -395,22 +429,23 @@ top: -5px;
 > = 992PX
 > = 1200PX
 > = 1400PX */
-
- @media (max-width: 768px){
-
+ @media (max-width: 1400px){
     .navigation{
-        padding-left: 45%;
+        padding-left: 65%;
     }
     
     .navigation-links a{
-        font-size: 10px;
+        font-size: 20px;
     }
     .home-page{
         padding-top: 20em;
-        padding-bottom: 25em;
+        padding-bottom: 30em;
     }
     .name h1{
-        font-size: 20px;
+        font-size: 35px;
+    }
+    .home-title h1{
+        font-size: 25px;
     }
     .about-page{
         padding-bottom: 10em;
@@ -418,14 +453,176 @@ top: -5px;
     .about-top h1, 
     .projects-title h1, 
     .contact-title h1{
-        font-size: 25px;;
+        font-size: 45px;;
     }
     
     .about-blurb-container{
         width: 75%;
-        font-size: 12px;
+        font-size: 20px;
+    }
+
+    #linksandinfo,
+    #linksandinfotwo,
+    #linksandinfothree,
+    #linksandinfofour,
+    #linksandinfofive,
+    #linksandinfosix{
+        font-size: 20px;
+    }
+    .projects-page{
+        padding-top:25%;
     }
     
+    .project-items h2 a{
+        color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    #project-line{
+        width: 80%;
+        align-items: center;
+    }
+    .project-items h1{
+        float: left;
+        margin-left: 20%;
+        margin-right: 15%;
+        font-size: 35px;
+    }
+    .project-items p{
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    
+    #project-video{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #plussign, #plussigntwo, #plussignthree, 
+    #plussignfour, #plussignfive, #plussignsix {
+        /* new positioning for icon*/
+        margin-left: 85%;
+        position: relative;
+        top: -30px;
+        transition: ease-in-out 0.5s;
+        background-color: transparent;
+    }
+    .more-projects-container h1{
+        font-size: 35px;
+    }
+    .more-projects-content h1{
+        font-size: 17px;
+    }
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+      
+    form label{
+        display: block;
+        font-size: 20px;
+        letter-spacing: 3.5px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    
+    form .full textarea{
+        height: 150px;
+        font-size: 15px;
+    }
+      
+    .email-link h1{
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .contact-title h1{
+        line-height: 30px;
+    }
+
+ }
+ @media (max-width: 1200px){
+    .navigation{
+        padding-left: 65%;
+    }
+    
+    .navigation-links a{
+        font-size: 15px;
+    }
+    .home-page{
+        padding-top: 20em;
+        padding-bottom: 30em;
+    }
+    .name h1{
+        font-size: 30px;
+    }
+    .about-page{
+        padding-bottom: 10em;
+    }
+    .about-top h1, 
+    .projects-title h1, 
+    .contact-title h1{
+        font-size: 35px;;
+    }
+    
+    .about-blurb-container{
+        width: 75%;
+        font-size: 18px;
+    }
+    
+    #linksandinfo,
+    #linksandinfotwo,
+    #linksandinfothree,
+    #linksandinfofour,
+    #linksandinfofive,
+    #linksandinfosix{
+        font-size: 15px;
+    }
+    .projects-page{
+        padding-top:25%;
+    }
+    
+    .project-items h2 a{
+        color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    #project-line{
+        width: 80%;
+        align-items: center;
+    }
+    .project-items h1{
+        float: left;
+        margin-left: 20%;
+        margin-right: 15%;
+        font-size: 22px;
+    }
+    .project-items p{
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
+    #project-video{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #plussign, #plussigntwo, #plussignthree, 
+    #plussignfour, #plussignfive, #plussignsix {
+        /* new positioning for icon*/
+        margin-left: 85%;
+        position: relative;
+        top: -30px;
+        transition: ease-in-out 0.5s;
+        background-color: transparent;
+    }
+    .more-projects-container h1{
+        font-size: 30px;
+    }
+    .more-projects-content h1{
+        font-size: 15px;
+    }
     form{
         width: 90%;
         margin-left: 5%;
@@ -445,13 +642,54 @@ top: -5px;
     }
       
     .email-link h1{
-        font-size: 13px;
-        margin-left: 15%;
+        font-size: 16px;
+        margin-left: 10%;
     }
     .contact-title h1{
-        line-height: 18px;
+        line-height: 25px;
     }
     
+ } 
+ @media (max-width: 992px){
+    .navigation{
+        padding-left: 45%;
+    }
+    
+    .navigation-links a{
+        font-size: 15px;
+    }
+    .home-page{
+        padding-top: 20em;
+        padding-bottom: 25em;
+    }
+    .name h1{
+        font-size: 20px;
+    }
+    .home-title h1{
+        font-size: 15px;
+    }
+    .about-page{
+        padding-bottom: 10em;
+    }
+    .about-top h1, 
+    .projects-title h1, 
+    .contact-title h1{
+        font-size: 25px;;
+    }
+    
+    .about-blurb-container{
+        width: 75%;
+        font-size: 12px;
+    }
+
+    #linksandinfo,
+    #linksandinfotwo,
+    #linksandinfothree,
+    #linksandinfofour,
+    #linksandinfofive,
+    #linksandinfosix{
+        font-size: 12px;
+    }
     .projects-page{
         padding-top:25%;
     }
@@ -491,6 +729,154 @@ top: -5px;
         transition: ease-in-out 0.5s;
         background-color: transparent;
     }
+    .more-projects-container h1{
+        font-size: 25px;
+    }
+    .more-projects-content h1{
+        font-size: 12px;
+    }
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+      
+    form label{
+        display: block;
+        font-size: 13px;
+        letter-spacing: 3.5px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    
+    form .full textarea{
+        height: 150px;
+        font-size: 15px;
+    }
+      
+    .email-link h1{
+        font-size: 13px;
+        margin-left: 15%;
+    }
+    .contact-title h1{
+        line-height: 18px;
+    }
+ }
+
+ @media (max-width: 768px){
+
+    .navigation{
+        padding-left: 45%;
+    }
+    
+    .navigation-links a{
+        font-size: 12px;
+    }
+    .home-page{
+        padding-top: 20em;
+        padding-bottom: 25em;
+    }
+    .name h1{
+        font-size: 20px;
+    }
+    .home-title h1{
+        font-size: 15px;
+    }
+    .about-page{
+        padding-bottom: 10em;
+    }
+    .about-top h1, 
+    .projects-title h1, 
+    .contact-title h1{
+        font-size: 25px;;
+    }
+    
+    .about-blurb-container{
+        width: 75%;
+        font-size: 12px;
+    }
+    
+    #linksandinfo,
+    #linksandinfotwo,
+    #linksandinfothree,
+    #linksandinfofour,
+    #linksandinfofive,
+    #linksandinfosix{
+        font-size: 12px;
+    }
+    #project-video{
+        width: 60%;
+    }
+    .projects-page{
+        padding-top:25%;
+    }
+    
+    .project-items h2 a{
+        color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    #project-line{
+        width: 80%;
+        align-items: center;
+    }
+    .project-items h1{
+        float: left;
+        margin-left: 20%;
+        margin-right: 15%;
+        font-size: 20px;
+    }
+    .project-items p{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    #project-video{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #plussign, #plussigntwo, #plussignthree, 
+    #plussignfour, #plussignfive, #plussignsix {
+        /* new positioning for icon*/
+        margin-left: 85%;
+        position: relative;
+        top: -30px;
+        transition: ease-in-out 0.5s;
+        background-color: transparent;
+    }
+    .more-projects-container h1{
+        font-size: 20px;
+    }
+    .more-projects-content h1{
+        font-size: 10px;
+    }
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+      
+    form label{
+        display: block;
+        font-size: 13px;
+        letter-spacing: 3.5px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    
+    form .full textarea{
+        height: 150px;
+        font-size: 15px;
+    }
+      
+    .email-link h1{
+        font-size: 13px;
+        margin-left: 15%;
+    }
+    .contact-title h1{
+        line-height: 18px;
+    }
+    
 }
     
 
@@ -510,6 +896,9 @@ top: -5px;
 .name h1{
     font-size: 20px;
 }
+.home-title h1{
+    font-size: 10px;
+}
 .about-page{
     padding-bottom: 10em;
 }
@@ -520,10 +909,67 @@ top: -5px;
 }
 
 .about-blurb-container{
-    width: 75%;
+    width: 80%;
     font-size: 12px;
 }
 
+
+#linksandinfo,
+#linksandinfotwo,
+#linksandinfothree,
+#linksandinfofour,
+#linksandinfofive,
+#linksandinfosix{
+    font-size: 10px;
+}
+#project-video{
+    width: 65%;
+}
+.projects-page{
+    padding-top:25%;
+}
+
+.project-items h2 a{
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#project-line{
+    width: 80%;
+    align-items: center;
+}
+.project-items h1{
+    float: left;
+    margin-left: 20%;
+    margin-right: 10%;
+    font-size: 16px;
+}
+.project-items p{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#project-video{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#plussign, #plussigntwo, #plussignthree, 
+#plussignfour, #plussignfive, #plussignsix {
+    /* new positioning for icon*/
+    margin-left: 85%;
+    position: relative;
+    top: -30px;
+    transition: ease-in-out 0.5s;
+    background-color: transparent;
+}
+.more-projects-container h1{
+    font-size: 25px;
+}
+.more-projects-content h1{
+    font-size: 10px;
+}
 form{
     width: 90%;
     margin-left: 5%;
@@ -550,48 +996,7 @@ form .full textarea{
     line-height: 18px;
 }
 
-.projects-page{
-    padding-top:25%;
-}
-
-.project-items h2 a{
-    color: #fff;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-weight: 300;
-    text-decoration: none;
-}
-#project-line{
-    width: 80%;
-    align-items: center;
-}
-.project-items h1{
-    float: left;
-    margin-left: 20%;
-    margin-right: 15%;
-    font-size: 16px;
-}
-.project-items p{
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
-#project-video{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-#plussign, #plussigntwo, #plussignthree, 
-#plussignfour, #plussignfive, #plussignsix {
-    /* new positioning for icon*/
-    margin-left: 85%;
-    position: relative;
-    top: -30px;
-    transition: ease-in-out 0.5s;
-    background-color: transparent;
-}
-
 
 }
-/* write your media queries from large to small 
-that's why they were working last time */
+/* write your media queries from large to small  */
 
