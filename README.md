@@ -27,8 +27,9 @@ Explore the live website[ here](https://carlislebrianna.com/).
 <br>
 <br>
 <br>
-![](images/BC-1.jpg)
-![](images/BC-2.jpg)
-![](images/BC-3.jpg)
-![](images/BC-4.jpg)
+![](images/bc-final-1.jpg)
+![](images/bc-final-2.jpg)
+![](images/bc-final-3.jpg)
+![](images/bc-final-4.jpg)
+![](images/bc-final-5.jpg)
 
