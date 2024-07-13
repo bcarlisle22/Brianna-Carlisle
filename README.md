@@ -1,4 +1,10 @@
-Welcome to my Software and Frontend Developer Portfolio Website! This project showcases my skills in HTML, CSS, and JavaScript, while emphasizing a sleek and minimalist design aesthetic.
+Portfolio Website
+<hr>
+<br>
+
+``HTML`` | ``CSS`` | ``JavaScript``
+
+<br>
 
 Key Features:
 
